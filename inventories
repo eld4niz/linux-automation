@@ -1,0 +1,8 @@
+[child-hosts]
+
+enter your child host machine IPs
+
+[child-hosts:vars]
+ansible_user
+ansible_password
+become=true

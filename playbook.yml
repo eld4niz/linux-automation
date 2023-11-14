@@ -1,0 +1,15 @@
+---
+  - name: nano-checker
+
+    hosts: all
+
+    tasks:
+      - name: check if nano is installed
+        command: nano --version
+        register: nano_check
+
+      - name: install nano
+        apt:
+          name: nano
+          state: present
+        when: nano_check.rc != 0
