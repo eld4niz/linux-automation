@@ -13,15 +13,39 @@ We document adding variables in the main inventory file for simplicity. However,
 
 ### ansible_user
 
-User that you need to access through ssh
+- User that you need to access through ssh
 
 ### ansible_password
 
-User password for that specific user
+- User password for that specific user
 
 ### become
 
-True or False, if you want to do anything as root user you should have this variable as true.
+- True or False, if you want to do anything as root user you should have this variable as true.
+
+
+
+## Ansible Playbooks
+
+Playbooks are automation blueprints, in YAML format, that Ansible uses to deploy and configure managed nodes.
+
+Playbook:
+
+- A list of plays that define the order in which Ansible performs operations, from top to bottom, to achieve an overall goal.
+
+Play:
+- An ordered list of tasks that maps to managed nodes in an inventory.
+
+Task:
+- A list of one or more modules that defines the operations that Ansible performs.
+
+Module:
+- A unit of code or binary that Ansible runs on managed nodes. Ansible modules are grouped in collections with a Fully Qualified Collection Name (FQCN) for each module.
+
+You can found Playbook Keywords from the link below:
+
+- https://docs.ansible.com/ansible/latest/reference_appendices/playbooks_keywords.html
+
 
 
 ## Working with Dynamic Inventories
