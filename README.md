@@ -1,7 +1,5 @@
 # Basic Ansible Configuration
 
-## Ansible Documentation Notes
-
 ## Ansible Inventory
 The inventory is the collection of the machines that we would like to manage. Usually, the default location for inventory is /etc/ansible/hosts but we can also define a custom one in any directory.
 
